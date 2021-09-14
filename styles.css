@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300;700&display=swap');
+:root{
+  --primary-color:aqua;
+  --secondary-color:rgb(238, 23, 123);
+  --tertiary-color:aliceblue;
+}
+body{
+    
+margin: 0;
+text-align: center;
+font-family: 'Glory', sans-serif;
+background-image: url("images/cash.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1 {
+    color: var(--primary-color); 
+}
+h2{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: xx-large;
+    background-color: var(--primary-color);
+    display: inline;
+    
+}
+#bill-input{
+    padding:0.5rem;
+    font-size: x-large;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+#cash-input{
+    padding:0.5rem;
+    font-size: x-large;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem; 
+}
+div{
+    background-color: var(--tertiary-color);
+    height:5vh;
+    font-size: larger;
+    
+}
+button{
+    font-family: 'Glory', sans-serif;
+    border: 0;
+    padding: 1rem 1.5rem; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top-left-radius:1rem;
+    border-bottom-right-radius: 1rem;  
+}
+table{
+    padding: 1rem;
+    margin: auto;
+    font-size: x-large;
+    color:var(--tertiary-color);
+}
+td{
+    padding: 0.5rem;
+}
