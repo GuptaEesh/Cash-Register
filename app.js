@@ -3,6 +3,8 @@ var cashGiven=document.querySelector("#cash-input");
 var btnSelector=document.querySelector("#btn");
 var output=document.querySelector("#return-money");
 var denomination=document.querySelectorAll("#denomination");
+var hideInitial=document.querySelector("#hide-initial");
+var total=document.querySelector("#total");
 var times=0;
 
 
@@ -33,15 +35,15 @@ function clickHandler(){
              cashToReturn=cashToReturn%t[i];
             denomination[i].innerText=noOfNotes;
          }
-         
+      total.innerText="Total Amount to be returned : "+(cashGiven.value-bill.value);
       output.innerText="Thankyou for shopping with us! Next time please pay us online😁, this logic building for no. of notes is too tiresome!🤣";
 };
 }
 function hide(){
     
-    cashGiven.style.display="none";
+    hideInitial.style.display="none";
 }
 hide();
-bill.addEventListener("click",show);
-function show(){cashGiven.style.display="initial";}
+bill.addEventListener("keydown",show);
+function show(){hideInitial.style.display="initial";}
 btnSelector.addEventListener("click",clickHandler);

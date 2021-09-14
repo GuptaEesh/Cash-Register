@@ -37,7 +37,10 @@ h2{
     margin-bottom: 2rem;
     margin-left: 1.5rem; 
 }
-div{
+p{
+    color: var(--tertiary-color);
+}
+#return-money{
     background-color: var(--tertiary-color);
     height:5vh;
     font-size: larger;
