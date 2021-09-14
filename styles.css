@@ -39,6 +39,7 @@ h2{
 }
 p{
     color: var(--tertiary-color);
+    font-size: x-large;
 }
 #return-money{
     background-color: var(--tertiary-color);
@@ -51,7 +52,7 @@ button{
     border: 0;
     padding: 1rem 1.5rem; 
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-top-left-radius:1rem;
     border-bottom-right-radius: 1rem;  
 }
