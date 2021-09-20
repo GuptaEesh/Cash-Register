@@ -9,10 +9,13 @@ var times=0;
 
 
 function clickHandler(){
-  
+    if(bill.value<0 || cashGiven.value<0){
+        alert("How can cash be negative! Please be logical!");
+        exit;
+    }
     if(cashGiven.value==0){
         alert("Very Shameful! First give the money then ask for the change");
-        
+        exit;
     }
     else if(bill.value==cashGiven.value){
        
