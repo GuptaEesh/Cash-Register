@@ -37,6 +37,11 @@ function clickHandler(){
              var noOfNotes=Math.trunc(cashToReturn/t[i]);
              cashToReturn=cashToReturn%t[i];
             denomination[i].innerText=noOfNotes;
+            if(denomination[i].innerText!=0){
+            denomination[i].style.backgroundColor="rgb(238, 23, 123)";
+            denomination[i].style.borderRadius="0.5rem";}
+            else
+            denomination[i].style.backgroundColor="initial";
          }
       total.innerText="Total Amount to be returned : "+(cashGiven.value-bill.value);
       output.innerText="Thankyou for shopping with us! Next time please pay us online😁, this logic building for no. of notes is too tiresome!🤣";
